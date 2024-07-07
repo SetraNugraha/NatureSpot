@@ -120,7 +120,7 @@ export default function Footer() {
                 <p>Jakarta, Jawa Barat</p>
               </div>
 
-              <a href="/" className="text-white underline">
+              <a href="/" className="text-white underline hover:opacity-70">
                 Google Maps
               </a>
             </div>
@@ -132,7 +132,7 @@ export default function Footer() {
           <p className="text-slate-300">
             Design by :{' '}
             <span>
-              <a href="https://www.youtube.com/watch?v=5zHNySMbbAs&list=PL-YZOfK-KK_lk-U2VrM8-f7Uflt9LrWwM" target="_blank" className=" underline">
+              <a href="https://www.youtube.com/watch?v=5zHNySMbbAs&list=PL-YZOfK-KK_lk-U2VrM8-f7Uflt9LrWwM" target="_blank" className=" underline hover:opacity-70">
                 UI Creative Studio
               </a>
             </span>

@@ -14,11 +14,11 @@ export default function Navbar() {
         </ul>
         <ul className="flex gap-x-8 items-center">
           <a href="/">
-            <img src="assets/cart.svg" alt="cart" className="w-[25px] h-[27px]" />
+            <img src="assets/cart.svg" alt="cart" className="w-[25px] h-[27px] hover:opacity-70 " />
           </a>
 
           <a href="/">
-            <img src="assets/profile.svg" alt="cart" className="w-[25px] h-[26px]" />
+            <img src="assets/profile.svg" alt="cart" className="w-[25px] h-[26px] hover:opacity-70" />
           </a>
         </ul>
       </nav>
