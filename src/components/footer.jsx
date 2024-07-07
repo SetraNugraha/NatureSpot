@@ -77,12 +77,25 @@ export default function Footer() {
                 <p>Jakarta, Jawa Barat</p>
               </div>
 
-              <a href="/" className="text-slate-300">Google Maps</a>
+              <a href="/" className="text-slate-300">
+                Google Maps
+              </a>
             </div>
           </div>
         </div>
 
-        <p className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 text-white">Copyright 2024 All Right Reverse</p>
+        {/* Copyright */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center mb-2">
+          <p className="text-slate-300">
+            Design by :{' '}
+            <span>
+              <a href="https://www.youtube.com/watch?v=5zHNySMbbAs&list=PL-YZOfK-KK_lk-U2VrM8-f7Uflt9LrWwM" target="_blank" className=" underline">
+                UI Creative Studio
+              </a>
+            </span>
+          </p>
+          <p className=" text-white">Copyright 2024 All Right Reverse</p>
+        </div>
       </footer>
     </>
   )
