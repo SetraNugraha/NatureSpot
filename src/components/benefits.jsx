@@ -6,7 +6,7 @@ export default function Benefits() {
         <div className="flex gap-x-5 items-center">
           {/* Image */}
           <div className="w-[110px] h-[85px] flex justify-center items-center bg-primary rounded-lg rounded-br-[30px] rounded-tl-[30px]">
-            <img src="/src/assets/quality.svg" alt="" />
+            <img src="assets/quality.svg" alt="" />
           </div>
 
           {/* desc */}
@@ -20,7 +20,7 @@ export default function Benefits() {
         <div className="flex gap-x-3 items-center">
           {/* Image */}
           <div className="w-[110px] h-[85px] flex justify-center items-center bg-primary rounded-lg rounded-br-[30px] rounded-tl-[30px]">
-            <img src="/src/assets/trolli.svg" alt="" />
+            <img src="assets/trolli.svg" alt="" />
           </div>
 
           {/* desc */}
@@ -34,7 +34,7 @@ export default function Benefits() {
         <div className="flex gap-x-3 items-center">
           {/* Image */}
           <div className="w-[110px] h-[85px] flex justify-center items-center bg-primary rounded-lg rounded-br-[30px] rounded-tl-[30px]">
-            <img src="/src/assets/payment.svg" alt="" />
+            <img src="assets/payment.svg" alt="" />
           </div>
 
           {/* desc */}

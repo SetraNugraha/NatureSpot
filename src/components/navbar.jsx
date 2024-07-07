@@ -13,8 +13,13 @@ export default function Navbar() {
           <li className="transform duration-200 hover:font-bold hover:text-primary hover:border-b-[1px] hover:border-primary cursor-pointer">Contact</li>
         </ul>
         <ul className="flex gap-x-8 items-center">
-          <img src="/src/assets/cart.svg" alt="cart" className="w-[25px] h-[27px]" />
-          <img src="/src/assets/profile.svg" alt="cart" className="w-[25px] h-[26px]" />
+          <a href="/">
+            <img src="assets/cart.svg" alt="cart" className="w-[25px] h-[27px]" />
+          </a>
+
+          <a href="/">
+            <img src="assets/profile.svg" alt="cart" className="w-[25px] h-[26px]" />
+          </a>
         </ul>
       </nav>
     </>

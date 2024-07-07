@@ -17,14 +17,14 @@ export default function Testimoni() {
           <div className="relative bg-primary flex items-center gap-x-10 p-10 rounded-tl-[50px] rounded-br-[50px] rounded-[10px]">
             {/* Profile */}
             <div className="flex flex-col items-center gap-y-1">
-              <img src="/src/assets/people.png" alt="" />
+              <img src="assets/people.png" alt="" />
               <h1 className="font-bold text-[#ECE7B4]">John Doe</h1>
               <p className="font-semibold text-white">Jakarta</p>
             </div>
 
             {/* text */}
             <div className="w-[460px] flex flex-col gap-y-3">
-              <img src="/src/assets/kutip.svg" alt="" className="w-[40px] h-[30px]" />
+              <img src="assets/kutip.svg" alt="" className="w-[40px] h-[30px]" />
               <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu consectetur elementum id massa ornare donec mattis.</p>
             </div>
 

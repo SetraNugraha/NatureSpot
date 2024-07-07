@@ -10,7 +10,7 @@ export default function Contact() {
               Do you have any problem? <span className="mt-[-10px]">contact us immediately</span>
             </h3>
           </div>
-          <img src="/src/assets/contact.png" alt="" className="rounded-xl w-[465px]" />
+          <img src="assets/contact.png" alt="" className="rounded-xl w-[465px]" />
         </div>
 
         {/* Right */}

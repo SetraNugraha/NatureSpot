@@ -81,15 +81,15 @@ export default function Footer() {
             {/* Social Meida */}
             <div className="flex gap-x-3 items-center mt-5">
               <a href="/">
-                <img src="/src/assets/whatsapp.svg" alt="" className="w-[30px] h-[30px]" />
+                <img src="assets/whatsapp.svg" alt="" className="w-[30px] h-[30px]" />
               </a>
 
               <a href="/">
-                <img src="/src/assets/instagram.svg" alt="" className="w-[30px] h-[30px]" />
+                <img src="assets/instagram.svg" alt="" className="w-[30px] h-[30px]" />
               </a>
 
               <a href="/">
-                <img src="/src/assets/facebook.svg" alt="" className="w-[30px] h-[30px]" />
+                <img src="assets/facebook.svg" alt="" className="w-[30px] h-[30px]" />
               </a>
             </div>
           </div>

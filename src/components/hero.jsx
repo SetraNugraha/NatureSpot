@@ -23,7 +23,7 @@ export default function Hero() {
 
         {/* Right */}
         <div className="flex flex-col items-center gap-y-7">
-          <img src="/src/assets/plant1.png" alt="" className="w-[380px] h-[530px" />
+          <img src="assets/plant1.png" alt="" className="w-[380px] h-[530px" />
           <div className="flex gap-x-2">
             <div className="w-[12px] h-[12px] rounded-full border border-secondary bg-secondary cursor-pointer"></div>
             <div className="w-[12px] h-[12px] rounded-full border border-secondary cursor-pointer"></div>

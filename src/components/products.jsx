@@ -73,12 +73,12 @@ export default function Products() {
           <div className="flex gap-x-7">
             <a href="/">
               <i>
-                <img src="/src/assets/left-swipe.svg" alt="" className="hover:opacity-50" />
+                <img src="assets/left-swipe.svg" alt="" className="hover:opacity-50" />
               </i>
             </a>
             <a href="/">
               <i>
-                <img src="/src/assets/right-swipe.svg" alt="" className="hover:opacity-50" />
+                <img src="assets/right-swipe.svg" alt="" className="hover:opacity-50" />
               </i>
             </a>
           </div>
@@ -91,7 +91,7 @@ export default function Products() {
             <div key={index} className="bg-primary relative px-5 rounded-tl-[50px] rounded-br-[60px] rounded-[10px]">
               {/* Image */}
               <div className="flex items-center justify-center mb-5">
-                <img src={`/src/assets/${item.image}.png`} alt="" className="w-[185px] h-[260px] mt-5" />
+                <img src={`assets/${item.image}.png`} alt="" className="w-[185px] h-[260px] mt-5" />
               </div>
 
               <div className="flex flex-col justify-between">
@@ -110,7 +110,7 @@ export default function Products() {
                 <div className="bg-secondary w-[80px] h-[80px] absolute bottom-0 right-0 rounded-br-[50px] rounded-tl-[30px] flex justify-center items-center cursor-pointer ">
                   <a href="/">
                     <i>
-                      <img src="/src/assets/cart.svg" alt="" />
+                      <img src="assets/cart.svg" alt="" />
                     </i>
                   </a>
                 </div>

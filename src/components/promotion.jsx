@@ -5,18 +5,18 @@ export default function Promotion() {
         {/* Left */}
         <div>
           <a href="#">
-            <img src="/src/assets/banner1.png" alt="" />
+            <img src="assets/banner1.png" alt="" />
           </a>
         </div>
 
         {/* Right */}
         <div className="flex flex-col gap-y-7">
           <a href="#">
-            <img src="/src/assets/banner2.png" alt="" />
+            <img src="assets/banner2.png" alt="" />
           </a>
 
           <a href="#">
-            <img src="/src/assets/banner3.png" alt="" />
+            <img src="assets/banner3.png" alt="" />
           </a>
         </div>
       </div>
