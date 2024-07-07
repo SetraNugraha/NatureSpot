@@ -1,7 +1,71 @@
+/* eslint-disable no-unused-vars */
+
+const menu = [
+  {
+    header: 'Services',
+    submenu: [
+      {
+        title: 'House Plant',
+        url: '/',
+      },
+      {
+        title: 'Garden Plant',
+        url: '/',
+      },
+      {
+        title: 'Vase',
+        url: '/',
+      },
+      {
+        title: 'Vertilizer',
+        url: '/',
+      },
+    ],
+  },
+  {
+    header: 'Information',
+    submenu: [
+      {
+        title: 'Office Hours',
+        url: '/',
+      },
+      {
+        title: 'Requirments',
+        url: '/',
+      },
+      {
+        title: 'About Us',
+        url: '/',
+      },
+    ],
+  },
+  {
+    header: 'Helpfull Link',
+    submenu: [
+      {
+        title: 'Service',
+        url: '/',
+      },
+      {
+        title: 'Support',
+        url: '/',
+      },
+      {
+        title: 'Terms & Condition',
+        url: '/',
+      },
+      {
+        title: 'Privacy Policy',
+        url: '/',
+      },
+    ],
+  },
+]
+
 export default function Footer() {
   return (
     <>
-      <footer className="bg-primary relative rounded-t-[40px] px-[15%]">
+      <footer className="bg-primary relative rounded-t-[40px] px-[15%] pb-10">
         <div className="py-[100px] flex justify-between items-center">
           {/* profile */}
           <div className="flex flex-col gap-y-5">
@@ -32,40 +96,19 @@ export default function Footer() {
 
           {/* other link */}
           <div className="grid grid-cols-4 gap-[70px]">
-            {/* service */}
-            <div className="flex flex-col gap-y-5">
-              <h1 className="font-bold text-[#ECE7B4]">Services</h1>
+            {menu.map((item, index) => (
+              <div key={index} className="flex flex-col gap-y-5">
+                <h1 className="font-bold text-[#ECE7B4]">{item.header}</h1>
 
-              <div className="flex flex-col gap-y-1 text-slate-300">
-                <a href="/">House Plant</a>
-                <a href="/">Garden Plant</a>
-                <a href="/">Vase</a>
-                <a href="/">Fertilizer</a>
+                <div className="flex flex-col gap-y-1 text-slate-300">
+                  {item.submenu.map((subItem, index) => (
+                    <a key={index} href={subItem.url} className="hover:underline">
+                      {subItem.title}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* Information */}
-            <div className="flex flex-col gap-y-5">
-              <h1 className="font-bold text-[#ECE7B4]">Information</h1>
-
-              <div className="flex flex-col gap-y-1 text-slate-300">
-                <a href="/">Office Hours</a>
-                <a href="/">Requirments</a>
-                <a href="/">About Us</a>
-              </div>
-            </div>
-
-            {/* Helpfull Link */}
-            <div className="flex flex-col gap-y-5">
-              <h1 className="font-bold text-[#ECE7B4]">Helpfull Link</h1>
-
-              <div className="flex flex-col gap-y-1 text-slate-300">
-                <a href="/">Service</a>
-                <a href="/">Support</a>
-                <a href="/">Terms & Condition</a>
-                <a href="/">privacy Policy</a>
-              </div>
-            </div>
+            ))}
 
             {/* Address */}
             <div className="flex flex-col gap-y-5">
@@ -77,7 +120,7 @@ export default function Footer() {
                 <p>Jakarta, Jawa Barat</p>
               </div>
 
-              <a href="/" className="text-slate-300">
+              <a href="/" className="text-slate-300 underline">
                 Google Maps
               </a>
             </div>
@@ -85,7 +128,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center mb-2">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center my-3">
           <p className="text-slate-300">
             Design by :{' '}
             <span>
