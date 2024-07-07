@@ -120,7 +120,7 @@ export default function Footer() {
                 <p>Jakarta, Jawa Barat</p>
               </div>
 
-              <a href="/" className="text-slate-300 underline">
+              <a href="/" className="text-white underline">
                 Google Maps
               </a>
             </div>
