@@ -11,10 +11,11 @@ import Footer from './components/footer'
 export default function App() {
   return (
     <>
-      <main className="px-[15%] min-h-screen">
-        {/* Navbar */}
-        <Navbar />
+      {/* Navbar */}
+      <Navbar />
 
+      {/* Content */}
+      <main className="px-[15%] min-h-screen">
         {/* Hero */}
         <Hero />
 
@@ -36,6 +37,7 @@ export default function App() {
         {/* Contact */}
         <Contact />
       </main>
+
       {/* Footer */}
       <Footer />
     </>
