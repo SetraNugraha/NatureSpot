@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-bullet .swiper-pagination-bullet {
+  @apply bg-inherit border-[2px] border-secondary w-[13px] h-[13px];
+}
+
+.hero-bullet .swiper-pagination-bullet-active {
+  @apply bg-secondary;
+}
+
+.testimoni-bullet .swiper-pagination-bullet {
+  @apply bg-inherit bg-primary  w-[13px] h-[13px];
+}
+
+.testimoni-bullet .swiper-pagination-bullet-active {
+  @apply bg-primary;
+}

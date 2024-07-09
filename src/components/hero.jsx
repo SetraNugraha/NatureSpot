@@ -1,3 +1,31 @@
+/* eslint-disable no-unused-vars */
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
+const heroImage = [
+  {
+    title: 'Tanaman',
+    path: 'plant1',
+  },
+  {
+    title: 'Tanaman',
+    path: 'plant2',
+  },
+  {
+    title: 'Tanaman',
+    path: 'plant3',
+  },
+  {
+    title: 'Tanaman',
+    path: 'plant4',
+  },
+]
+
 export default function Hero() {
   return (
     <>
@@ -22,14 +50,26 @@ export default function Hero() {
         </div>
 
         {/* Right */}
-        <div className="flex flex-col items-center gap-y-7">
-          <img src="assets/plant1.png" alt="" className="w-[380px] h-[530px" />
-          <div className="flex gap-x-2">
-            <div className="w-[12px] h-[12px] rounded-full border border-secondary bg-secondary cursor-pointer"></div>
-            <div className="w-[12px] h-[12px] rounded-full border border-secondary cursor-pointer"></div>
-            <div className="w-[12px] h-[12px] rounded-full border border-secondary cursor-pointer"></div>
-            <div className="w-[12px] h-[12px] rounded-full border border-secondary cursor-pointer"></div>
-          </div>
+        <div className="w-1/3">
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            autoplay={{ delay: 2000 }}
+            slidesPerView={'1'}
+            spaceBetween={100}
+            pagination={{
+              clickable: true,
+              el: '.hero-bullet',
+            }}
+            centeredSlides={true}
+            className="flex flex-col gap-y-10"
+          >
+            {heroImage.map((item, index) => (
+              <SwiperSlide key={index} className='flex items-center justify-center'>
+                <img src={`/assets/${item.path}.png`} alt={item.title} className="w-[300px] h-[450px]" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="hero-bullet flex items-center justify-center gap-x-3"></div>
         </div>
       </div>
     </>

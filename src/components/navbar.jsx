@@ -24,6 +24,7 @@ const menu = [
   },
 ]
 
+
 export default function Navbar() {
   const [isScroll, setIsScroll] = useState(false)
 
@@ -46,7 +47,7 @@ export default function Navbar() {
   return (
     <>
       <header className={`px-[15%] ${isScroll ? 'sticky top-5 z-50' : ''}`}>
-        <nav className={`flex justify-between items-center mt-7 transition-all duration-300 ${isScroll ? 'shadow-xl p-3 bg-white z-50 rounded-xl border-[0.5px] border-slate-100' : ''}`}>
+        <nav className={`flex justify-between items-center mt-7 transition-all duration-300 ${isScroll ? 'shadow-xl p-3 bg-white z-50 rounded-xl border-[0.5px] border-slate-100 w-[90%] mx-auto transition-all duration-300' : ''}`}>
           <a className="font-bold text-primary text-2xl cursor-pointer">
             Nature<span className="text-yellow-500">Spot</span>
           </a>

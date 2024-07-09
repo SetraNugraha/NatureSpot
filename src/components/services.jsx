@@ -11,28 +11,28 @@ export default function Services() {
         <div className="flex gap-x-2 justify-between items-center mt-12">
           <div className="relative w-[320px] ">
             <img src="assets/img-services1.png" alt="" className="w-[350px]" />
-            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-black/60 opacity-0 hover:opacity-100 transition duration-200">
+            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-primary/80 opacity-0 hover:opacity-100 transition-all duration-200">
               <h1 className="font-bold text-[#ECE7B4] text-2xl">Calathea Lutea</h1>
             </div>
           </div>
           
           <div className="relative w-[320px] ">
             <img src="assets/img-services2.png" alt="" className="w-[350px]" />
-            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-black/60 opacity-0 hover:opacity-100 transition duration-200">
+            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-primary/80  opacity-0 hover:opacity-100 transition-all duration-200">
               <h1 className="font-bold text-[#ECE7B4] text-2xl">Calathea Lutea</h1>
             </div>
           </div>
 
           <div className="relative w-[320px] ">
             <img src="assets/img-services3.png" alt="" className="w-[350px]" />
-            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-black/60 opacity-0 hover:opacity-100 transition duration-200">
+            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-primary/80  opacity-0 hover:opacity-100 transition-all duration-200">
               <h1 className="font-bold text-[#ECE7B4] text-2xl">Calathea Lutea</h1>
             </div>
           </div>
 
           <div className="relative w-[320px] ">
             <img src="assets/img-services1.png" alt="" className="w-[350px]" />
-            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-black/60 opacity-0 hover:opacity-100 transition duration-200">
+            <div className="absolute inset-0 m-[7px] rounded-[10px] flex items-center justify-center bg-primary/80  opacity-0 hover:opacity-100 transition-all duration-200">
               <h1 className="font-bold text-[#ECE7B4] text-2xl">Calathea Lutea</h1>
             </div>
           </div>
