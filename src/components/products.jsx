@@ -1,4 +1,12 @@
 /* eslint-disable no-unused-vars */
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
 const products = [
   {
     name: 'Calathea Luthea',
@@ -24,36 +32,42 @@ const products = [
     stock: 40,
     price: 80000,
   },
-  // {
-  //   name: 'ZZ Plant',
-  //   stock: 35,
-  //   price: 95000,
-  // },
-  // {
-  //   name: 'Pothos',
-  //   stock: 50,
-  //   price: 50000,
-  // },
-  // {
-  //   name: 'Spider Plant',
-  //   stock: 45,
-  //   price: 60000,
-  // },
-  // {
-  //   name: 'Peace Lily',
-  //   stock: 20,
-  //   price: 110000,
-  // },
-  // {
-  //   name: 'Rubber Plant',
-  //   stock: 25,
-  //   price: 130000,
-  // },
-  // {
-  //   name: 'Chinese Money Plant',
-  //   stock: 30,
-  //   price: 90000,
-  // },
+  {
+    name: 'ZZ Plant',
+    image: 'plant3',
+    stock: 35,
+    price: 95000,
+  },
+  {
+    name: 'Pothos',
+    image: 'plant1',
+    stock: 50,
+    price: 50000,
+  },
+  {
+    name: 'Spider Plant',
+    image: 'plant3',
+    stock: 45,
+    price: 60000,
+  },
+  {
+    name: 'Peace Lily',
+    image: 'plant2',
+    stock: 20,
+    price: 110000,
+  },
+  {
+    name: 'Rubber Plant',
+    image: 'plant3',
+    stock: 25,
+    price: 130000,
+  },
+  {
+    name: 'Chinese Money Plant',
+    image: 'plant1',
+    stock: 30,
+    price: 90000,
+  },
 ]
 
 export default function Products() {
@@ -71,12 +85,12 @@ export default function Products() {
 
           {/* button Swipe */}
           <div className="flex gap-x-7">
-            <a href="/">
+            <a href="" id="custom-left">
               <i>
                 <img src="assets/left-swipe.svg" alt="" className="hover:opacity-50" />
               </i>
             </a>
-            <a href="/">
+            <a href="" id="custom-right">
               <i>
                 <img src="assets/right-swipe.svg" alt="" className="hover:opacity-50" />
               </i>
@@ -85,10 +99,19 @@ export default function Products() {
         </div>
 
         {/* Product */}
-        <div className="grid grid-cols-4 gap-10 my-20">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          navigation={{
+            prevEl: '#custom-left',
+            nextEl: '#custom-right',
+          }}
+          slidesPerView={'4'}
+          spaceBetween={30}
+          className="my-20"
+        >
           {products.map((item, index) => (
             // Card
-            <div key={index} className="bg-primary relative px-5 rounded-tl-[50px] rounded-br-[60px] rounded-[10px]">
+            <SwiperSlide key={index} className="bg-primary relative px-5 rounded-tl-[50px] rounded-br-[60px] rounded-[10px]">
               {/* Image */}
               <div className="flex items-center justify-center mb-5">
                 <img src={`assets/${item.image}.png`} alt="" className="w-[185px] h-[260px] mt-5" />
@@ -115,9 +138,9 @@ export default function Products() {
                   </a>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </>
   )
