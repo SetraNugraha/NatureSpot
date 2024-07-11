@@ -61,11 +61,11 @@ export default function Hero() {
               el: '.hero-bullet',
             }}
             centeredSlides={true}
-            className="flex flex-col gap-y-10"
+            className="flex flex-col items-center gap-y-10"
           >
             {heroImage.map((item, index) => (
               <SwiperSlide key={index} className='flex items-center justify-center'>
-                <img src={`/assets/${item.path}.png`} alt={item.title} className="w-[300px] h-[450px]" />
+                <img src={`/assets/${item.path}.png`} alt={item.title} className="w-[300px] h-[450px] mr-2" />
               </SwiperSlide>
             ))}
           </Swiper>

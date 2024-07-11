@@ -24,7 +24,6 @@ const menu = [
   },
 ]
 
-
 export default function Navbar() {
   const [isScroll, setIsScroll] = useState(false)
 
